@@ -1,0 +1,17 @@
+<h1>Angular Autologout</h1>
+<img src="assets/angular-logo.png"/>
+<div class="application__button-container">
+  <button (click)="extendLogout()">Extend Logout</button>
+  <button (click)="logIn()">Log In</button>
+</div>
+<div *ngIf="($isLoggedIn | async); then loggedIn else loggedOut"
+    [ngClass]="{'indicator--logged-in': ($isLoggedIn | async), 'indicator--logged-out': !(indicator--logged-in)}">
+</div>
+
+<ng-template #loggedIn>
+  <div class="indicator--logged-in">Logged In</div>
+</ng-template>
+
+<ng-template #loggedOut>
+  <div class="indicator--logged-out">Logged Out</div>
+</ng-template>

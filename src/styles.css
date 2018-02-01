@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 6px 12px;
+}
+
+.application{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.application:last-child{
+    margin-bottom: 48px;
+}
+
+.application__button-container{
+    margin-top:36px;
+}
+
+.indicator--logged-in, .indicator--logged-out {
+    padding: 6px 12px;
+    margin-top: 12px;
+    border-radius: 2px;
+}
+
+.indicator--logged-in{
+    color:green
+}
+
+.indicator--logged-out{
+    color: red;
+}
